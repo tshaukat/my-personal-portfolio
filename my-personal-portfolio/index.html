@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>👾 Tahira Shaukat</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Ingrid+Darling&family=Roboto+Mono:wght@300;400;500;600;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link href="http://fonts.cdnfonts.com/css/apercu" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- TAILWIND CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
+  <!--Replace with your tailwind.css once created-->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
+  <!-- Define your gradient here - use online tools to find a gradient matching your branding-->
+  <style>
+    .gradient {
+      background: linear-gradient(90deg, #db2877 0%, #daae51 100%);
+    }
+  </style>
+</head>
+
+<body class="leading-normal tracking-normal text-white">
+  <!--Nav-->
+  <nav id="header" class="fixed w-full z-30 top-0 text-white backdrop-blur-sm">
+    <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2 h-20">
+      <div class="pl-4 flex items-center">
+        <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
+          <!--Icon from: http://www.potlabicons.com/ -->
+          T
+        </a>
+      </div>
+      <div class="block lg:hidden pr-4">
+        <button type="button"
+          class="flex items-center p-1 text-white hover:text-pink-500 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+          data-drawer-backdrop="false"
+          data-drawer-placement="right" data-drawer-target="drawer-navigation" data-drawer-show="drawer-navigation"
+          aria-controls="drawer-navigation">
+          <svg class="fill-current h-5 w-5" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <title>Menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+          </svg>
+        </button>
+      </div>
+      <div
+        class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20"
+        id="nav-content">
+        <ul class="list-reset lg:flex justify-end flex-1 items-center">
+          <li class="mr-3">
+            <a class="inline-block text-white no-underline hover:text-pink-500 hover:text-underline py-2 px-4"
+              href="#">About Me</a>
+          </li>
+          <li class="mr-3">
+            <a class="inline-block text-white no-underline hover:text-pink-500 hover:text-underline py-2 px-4"
+              href="#">Skills</a>
+          </li>
+          <li class="mr-3">
+            <a class="inline-block text-white no-underline hover:text-pink-500 hover:text-underline py-2 px-4"
+              href="#">Projects</a>
+          </li>
+          <li class="mr-3">
+            <a class="inline-block text-white no-underline hover:text-pink-500 hover:text-underline py-2 px-4"
+              href="#">Resume</a>
+          </li>
+        </ul>
+        <button id="navAction"
+          class="mx-auto lg:mx-0 hover:bg-pink-600 bg-white text-gray-800 hover:text-white font-bold rounded-full mt-4 lg:mt-0 py-2 px-6 shadow focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+          Say Hello!
+        </button>
+
+      </div>
+    </div>
+    <hr class="border-b border-pink-100 opacity-25 my-0 py-0" />
+  </nav>
+  <section class="section intro mt-24">
+    <header class="introduction">
+      <h1 class="intro__hello">Hi there!<span class="emoji wave-hand animated">👋🏼</span>
+
+        <h2 class="intro_tagline">
+          I'm
+          <span class="name">Tahira Shaukat.</span><br>
+          I like to code, write, and read about anything and everything. Sometimes I design stuff, too.
+        </h2>
+        <h3 class="intro__contact">
+          <span>Say Hi!</span>
+          <span class="pointer__icon">&#128073;&#127996;</span>
+          <span>
+            <a href="mailto:tahira.shaukat95@gmail.com" target="blank"
+              class="highlight-link">tahira.shaukat95@gmail.com</a>
+          </span>
+        </h3>
+    </header>
+  </section>
+  <section class="section background">
+    <h2 class="section__title">About Me</h2>
+    <div class="section__content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.</p>
+    </div>
+  </section>
+  <section class="section skills">
+    <div class="section__title">Skills</div>
+    <div class="section__content">
+      <div class="skillz__category">
+        <div class="skillz_category--label">LANGUAGES</div>
+        <ul>
+          <li class="skillz__category--item">▹ Python</li>
+          <li class="skillz__category--item">▹ HTML</li>
+          <li class="skillz__category--item">▹ CSS</li>
+          <li class="skillz__category--item">▹ JavaScript</li>
+          <li class="skillz__category--item">▹ SQL</li>
+          <li class="skillz__category--item">▹ Java</li>
+        </ul>
+      </div>
+      <div class="skillz__category">
+        <div class="skillz_category--label">FRAMEWORKS</div>
+        <ul>
+          <li class="skillz__category--item">▹ TensorFlow</li>
+          <li class="skillz__category--item">▹ Node.js</li>
+        </ul>
+      </div>
+      <div class="skillz__category">
+        <div class="skillz_category--label">TOOLS</div>
+        <ul>
+          <li class="skillz__category--item">▹ Zsh</li>
+          <li class="skillz__category--item">▹ Git & GitHub</li>
+          <li class="skillz__category--item">▹ MySQL</li>
+          <li class="skillz__category--item">▹ Figma</li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </section>
+  <section class="section projects">
+    <h1 class="section__title">Some Things I've Built</h1>
+    <ul class="project__list">
+      <li class="project">
+        <div class="project__wrapper">
+
+        </div>
+      </li>
+    </ul>
+    </div>
+    </div>
+  </section>
+
+  <section class="gradient flex justify-center items-center p-20">
+    <div class="flex-1 flex flex-col bg-gray-800 rounded-lg px-16 py-10 flex-1 justify-center items-center">
+      <h1 class="section__title text-center">Say Hello!</h1>
+
+      <form class="w-full">
+        <div class="relative z-0 mb-6 w-full group">
+          <input type="email" name="floating_email" id="floating_email"
+            class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-pink-500 focus:outline-none focus:ring-0 focus:border-pink-600 peer"
+            placeholder=" " required="">
+          <label for="floating_email"
+            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-pink-600 peer-focus:dark:text-pink-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email
+            address</label>
+        </div>
+        <div class="relative z-0 mb-6 w-full group">
+          <input type="password" name="floating_password" id="floating_password"
+            class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-pink-500 focus:outline-none focus:ring-0 focus:border-pink-600 peer"
+            placeholder=" " required="">
+          <label for="floating_password"
+            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-pink-600 peer-focus:dark:text-pink-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Password</label>
+        </div>
+        <div class="relative z-0 mb-6 w-full group">
+          <input type="password" name="repeat_password" id="floating_repeat_password"
+            class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-pink-500 focus:outline-none focus:ring-0 focus:border-pink-600 peer"
+            placeholder=" " required="">
+          <label for="floating_repeat_password"
+            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-pink-600 peer-focus:dark:text-pink-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Confirm
+            password</label>
+        </div>
+        <div class="grid md:grid-cols-2 md:gap-6">
+          <div class="relative z-0 mb-6 w-full group">
+            <input type="text" name="floating_first_name" id="floating_first_name"
+              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-pink-500 focus:outline-none focus:ring-0 focus:border-pink-600 peer"
+              placeholder=" " required="">
+            <label for="floating_first_name"
+              class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-pink-600 peer-focus:dark:text-pink-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">First
+              name</label>
+          </div>
+          <div class="relative z-0 mb-6 w-full group">
+            <input type="text" name="floating_last_name" id="floating_last_name"
+              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-pink-500 focus:outline-none focus:ring-0 focus:border-pink-600 peer"
+              placeholder=" " required="">
+            <label for="floating_last_name"
+              class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-pink-600 peer-focus:dark:text-pink-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Last
+              name</label>
+          </div>
+        </div>
+        <div class="grid md:grid-cols-2 md:gap-6">
+          <div class="relative z-0 mb-6 w-full group">
+            <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="floating_phone" id="floating_phone"
+              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-pink-500 focus:outline-none focus:ring-0 focus:border-pink-600 peer"
+              placeholder=" " required="">
+            <label for="floating_phone"
+              class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-pink-600 peer-focus:dark:text-pink-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Phone
+              number (123-456-7890)</label>
+          </div>
+          <div class="relative z-0 mb-6 w-full group">
+            <input type="text" name="floating_company" id="floating_company"
+              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-pink-500 focus:outline-none focus:ring-0 focus:border-pink-600 peer"
+              placeholder=" " required="">
+            <label for="floating_company"
+              class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-pink-600 peer-focus:dark:text-pink-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Company
+              (Ex. Google)</label>
+          </div>
+        </div>
+        <div class="w-full flex justify-center items-center mt-4">
+
+          <button type="submit"
+            class="text-white bg-pink-700 hover:bg-pink-800 focus:ring-4 focus:outline-none focus:ring-pink-300 font-medium rounded-full text-sm w-full sm:w-auto px-16 py-4 text-center dark:bg-pink-600 dark:hover:bg-pink-700 dark:focus:ring-pink-800">Send</button>
+        </div>
+      </form>
+
+
+  </section>
+
+  <footer class="p-4 md:p-8 shadow flex items-center justify-between">
+    <span class="text-sm text-center text-white">© 2022 <a href="#" class="hover:underline">Tahira Shouakat</a>. All
+      Rights Reserved.
+    </span>
+    <ul class="flex items-center justify-end text-sm text-white mt-0">
+      <li class="w-4 h-4">
+        <a href="#" class="hover:underline mr-6 ">
+          <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem" viewBox="0 0 32 32" fill="white">
+            <path
+              d="M16 0.396c-8.839 0-16 7.167-16 16 0 7.073 4.584 13.068 10.937 15.183 0.803 0.151 1.093-0.344 1.093-0.772 0-0.38-0.009-1.385-0.015-2.719-4.453 0.964-5.391-2.151-5.391-2.151-0.729-1.844-1.781-2.339-1.781-2.339-1.448-0.989 0.115-0.968 0.115-0.968 1.604 0.109 2.448 1.645 2.448 1.645 1.427 2.448 3.744 1.74 4.661 1.328 0.14-1.031 0.557-1.74 1.011-2.135-3.552-0.401-7.287-1.776-7.287-7.907 0-1.751 0.62-3.177 1.645-4.297-0.177-0.401-0.719-2.031 0.141-4.235 0 0 1.339-0.427 4.4 1.641 1.281-0.355 2.641-0.532 4-0.541 1.36 0.009 2.719 0.187 4 0.541 3.043-2.068 4.381-1.641 4.381-1.641 0.859 2.204 0.317 3.833 0.161 4.235 1.015 1.12 1.635 2.547 1.635 4.297 0 6.145-3.74 7.5-7.296 7.891 0.556 0.479 1.077 1.464 1.077 2.959 0 2.14-0.020 3.864-0.020 4.385 0 0.416 0.28 0.916 1.104 0.755 6.4-2.093 10.979-8.093 10.979-15.156 0-8.833-7.161-16-16-16z" />
+          </svg>
+        </a>
+      </li>
+      <li class="w-4 h-4">
+        <a href="#" class="mr-4 hover:underline sm:mr-6"><svg fill="white" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="1rem"
+            height="1rem" viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+            <g>
+              <path
+                d="M17.303,14.365c0.012-0.015,0.023-0.031,0.031-0.048v0.048H17.303z M32,0v32H0V0H32L32,0z M9.925,12.285H5.153v14.354   h4.772V12.285z M10.237,7.847c-0.03-1.41-1.035-2.482-2.668-2.482c-1.631,0-2.698,1.072-2.698,2.482   c0,1.375,1.035,2.479,2.636,2.479h0.031C9.202,10.326,10.237,9.222,10.237,7.847z M27.129,18.408c0-4.408-2.355-6.459-5.494-6.459   c-2.531,0-3.664,1.391-4.301,2.368v-2.032h-4.77c0.061,1.346,0,14.354,0,14.354h4.77v-8.016c0-0.434,0.031-0.855,0.157-1.164   c0.346-0.854,1.132-1.746,2.448-1.746c1.729,0,2.418,1.314,2.418,3.246v7.68h4.771L27.129,18.408L27.129,18.408z" />
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+          </svg></a>
+      </li>
+    </ul>
+  </footer>
+
+
+  <div id="drawer-navigation" class="fixed z-40 h-screen p-4 overflow-y-auto bg-white w-80 flex flex-col justify-between border-pink-100/25 border-l-2" tabindex="-1"
+    aria-labelledby="drawer-navigation-label">
+    <button type="button" data-drawer-dismiss="drawer-navigation" aria-controls="drawer-navigation"
+      class="text-white bg-transparent hover:text-pink-500 text-sm p-1.5 absolute top-2.5 right-2.5 hover:rotate-180 transition-all duration-300">
+      <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd"
+          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+          clip-rule="evenodd"></path>
+      </svg>
+      <span class="sr-only">Close menu</span>
+    </button>
+    <div class="py-4 overflow-y-auto flex flex-col justify-center items-center">
+      <ul class="space-y-2 w-full">
+        <li>
+          <a href="#" class="flex items-center p-2 text-base font-normal text-white hover:text-pink-500">
+            <span class="ml-3">About me</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="flex items-center p-2 text-base font-normal text-white hover:text-pink-500">
+            <span class="ml-3">Skills</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="flex items-center p-2 text-base font-normal text-white hover:text-pink-500">
+            <span class="ml-3">Projects</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="flex items-center p-2 text-base font-normal text-white hover:text-pink-500">
+            <span class="ml-3">Resume</span>
+          </a>
+        </li>
+
+      </ul>
+      <button id="navAction"
+      class="w-3/4 lg:mx-0 hover:bg-pink-600 bg-white text-gray-800 hover:text-white font-bold rounded-full mt-4 lg:mt-0 py-2 px-6 shadow focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+      Say Hello!
+    </button>
+
+    </div>
+    <ul class="flex items-center justify-end text-sm text-white mt-0">
+      <li class="w-4 h-4">
+        <a href="#" class="hover:underline mr-6 ">
+          <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem" viewBox="0 0 32 32" fill="white">
+            <path
+              d="M16 0.396c-8.839 0-16 7.167-16 16 0 7.073 4.584 13.068 10.937 15.183 0.803 0.151 1.093-0.344 1.093-0.772 0-0.38-0.009-1.385-0.015-2.719-4.453 0.964-5.391-2.151-5.391-2.151-0.729-1.844-1.781-2.339-1.781-2.339-1.448-0.989 0.115-0.968 0.115-0.968 1.604 0.109 2.448 1.645 2.448 1.645 1.427 2.448 3.744 1.74 4.661 1.328 0.14-1.031 0.557-1.74 1.011-2.135-3.552-0.401-7.287-1.776-7.287-7.907 0-1.751 0.62-3.177 1.645-4.297-0.177-0.401-0.719-2.031 0.141-4.235 0 0 1.339-0.427 4.4 1.641 1.281-0.355 2.641-0.532 4-0.541 1.36 0.009 2.719 0.187 4 0.541 3.043-2.068 4.381-1.641 4.381-1.641 0.859 2.204 0.317 3.833 0.161 4.235 1.015 1.12 1.635 2.547 1.635 4.297 0 6.145-3.74 7.5-7.296 7.891 0.556 0.479 1.077 1.464 1.077 2.959 0 2.14-0.020 3.864-0.020 4.385 0 0.416 0.28 0.916 1.104 0.755 6.4-2.093 10.979-8.093 10.979-15.156 0-8.833-7.161-16-16-16z" />
+          </svg>
+        </a>
+      </li>
+      <li class="w-4 h-4">
+        <a href="#" class="mr-4 hover:underline sm:mr-6"><svg fill="white" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="1rem"
+            height="1rem" viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+            <g>
+              <path
+                d="M17.303,14.365c0.012-0.015,0.023-0.031,0.031-0.048v0.048H17.303z M32,0v32H0V0H32L32,0z M9.925,12.285H5.153v14.354   h4.772V12.285z M10.237,7.847c-0.03-1.41-1.035-2.482-2.668-2.482c-1.631,0-2.698,1.072-2.698,2.482   c0,1.375,1.035,2.479,2.636,2.479h0.031C9.202,10.326,10.237,9.222,10.237,7.847z M27.129,18.408c0-4.408-2.355-6.459-5.494-6.459   c-2.531,0-3.664,1.391-4.301,2.368v-2.032h-4.77c0.061,1.346,0,14.354,0,14.354h4.77v-8.016c0-0.434,0.031-0.855,0.157-1.164   c0.346-0.854,1.132-1.746,2.448-1.746c1.729,0,2.418,1.314,2.418,3.246v7.68h4.771L27.129,18.408L27.129,18.408z" />
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+          </svg></a>
+      </li>
+    </ul>
+  </div>
+
+  <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+</body>
+
+</html>
